@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2b1b00, #000);
+  color: gold;
+}
+
+.mobile-header {
+  display: none;
+  background: black;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #3a2a00;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #000, #1a1200);
+  padding: 30px;
+  border-right: 1px solid #3a2a00;
+}
+
+.sidebar h2 {
+  text-shadow: 0 0 10px gold;
+}
+
+.sidebar a {
+  color: #cfa93d;
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+}
+
+.hero {
+  height: 320px;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.85), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.brands button {
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.brands button:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 15px gold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: linear-gradient(180deg, #000, #1a1200);
+  border: 1px solid #3a2a00;
+  padding: 20px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255,215,0,.4);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 15px;
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: .6;
+}
+
+/* MOBILE */
+@media(max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .hero-overlay {
+    padding-left: 20px;
+  }
+}
+
