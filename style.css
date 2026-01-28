@@ -24,9 +24,9 @@ body {
 
 .sidebar {
   width: 240px;
-  background: linear-gradient(180deg, #000, #1a1200);
+  background: linear-gradient(180deg, #000, #8D7B3B);
   padding: 30px;
-  border-right: 1px solid #3a2a00;
+  border-right: 1px solid #8D7B3B;
 }
 
 .sidebar h2 {
@@ -34,7 +34,7 @@ body {
 }
 
 .sidebar a {
-  color: #cfa93d;
+  color: #8D7B3B;
   display: block;
   margin: 12px 0;
   text-decoration: none;
