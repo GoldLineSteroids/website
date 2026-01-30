@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold Line Steroïden</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript">window.$crisp=[];
-    window.CRISP_WEBSITE_ID="650e70a6-21d5-41e0-bd81-0a764ab69711";
-    (function(){d=document;
-    s=d.createElement("script");
-    s.src="https://client.crisp.chat/l.js";
-    s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+ <!-- Crisp integratie --> 
+  <script type="text/javascript"> window.$crisp = []; 
+    window.CRISP_WEBSITE_ID = "650e70a6-21d5-41e0-bd81-0a764ab69711"; 
+    // Verberg de standaard Crisp launcher (officiële methode) window.$crisp.push(["config", "hide", true]); 
+    (function () { var d = document; var s = d.createElement("script"); 
+    s.src = "https://client.crisp.chat/l.js"; s.async = 1; 
+    d.getElementsByTagName("head")[0].appendChild(s); })(); 
   </script>
 </head>
 <body>
@@ -336,20 +337,24 @@
 </div>
 
 <script src="js/app.js"></script>
+
+  
+  <div id="golden-chat-launcher">Chat met ons</div>
+  
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var launcher = document.getElementById("golden-chat-launcher");
 
     launcher.addEventListener("click", function () {
-      // Toon Crisp widget
+      // Maak Crisp zichtbaar
       $crisp.push(["config", "hide", false]);
 
-      // Open chat
+      // Open chatbox
       $crisp.push(["do", "chat:open"]);
     });
   });
 </script>
-  
+
 </body>
 </html>
 
