@@ -236,6 +236,8 @@ footer {
   display: block;
 }
 
+.crisp-client .cc-1xry .cc-kv6t { display: none !important; }
+
 #golden-chat-launcher {
   position: fixed;
   bottom: 20px;
