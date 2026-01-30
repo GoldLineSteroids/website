@@ -237,13 +237,7 @@ footer {
 }
 
 
-/* Verberg standaard Crisp bubble */
-/*#crisp-chatbox { display: none !important; }*/
 
-/* Verberg alleen de standaard launcher, niet de chatbox */ 
-.crisp-client .cc-1xry .cc-kv6t { display: none !important; }
-
-z-index: 999999;
 
 #golden-chat-launcher {
   position: fixed;
