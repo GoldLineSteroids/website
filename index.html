@@ -12,20 +12,6 @@
     s.src="https://client.crisp.chat/l.js";
     s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
   </script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var launcher = document.getElementById("golden-chat-launcher");
-
-    launcher.addEventListener("click", function () {
-      // Toon Crisp widget
-      $crisp.push(["config", "hide", false]);
-
-      // Open chat
-      $crisp.push(["do", "chat:open"]);
-    });
-  });
-</script>
-
 </head>
 <body>
 
@@ -351,6 +337,20 @@
 </div>
 
 <script src="js/app.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var launcher = document.getElementById("golden-chat-launcher");
+
+    launcher.addEventListener("click", function () {
+      // Toon Crisp widget
+      $crisp.push(["config", "hide", false]);
+
+      // Open chat
+      $crisp.push(["do", "chat:open"]);
+    });
+  });
+</script>
+  
 </body>
 </html>
 
