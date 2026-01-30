@@ -236,6 +236,14 @@ footer {
   display: block;
 }
 
+/* Verberg ALLE Crisp launchers (blauwe knop) */
+.crisp-client [data-testid="widget-bubble"],
+.crisp-client [data-testid="chat-open"],
+.crisp-client [data-testid="chat-closed"] {
+  display: none !important;
+}
+
+
 /* Verberg NIET de chatbox, alleen de standaard launcher via Crisp config */ /* Golden launcher */ 
 #golden-chat-launcher { position: fixed; 
                        bottom: 20px; 
