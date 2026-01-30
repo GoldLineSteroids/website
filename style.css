@@ -237,7 +237,7 @@ footer {
 }
 
 /* Verberg standaard Crisp bubble */
-#crisp-chatbox { display: none !important; }
+/*#crisp-chatbox { display: none !important; }*/
 
 #golden-chat-launcher {
   position: fixed;
