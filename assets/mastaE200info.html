@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Line Steroiden</title>
+
+<style>
+/* ================== BASIS ================== */
+* {
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2b1b00, #000);
+  color: gold;
+}
+
+/* ================== TOP BANNER ================== */
+.top-banner {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0,.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-overlay h1 {
+  font-size: 46px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 25px gold;
+}
+
+.banner-overlay p {
+  letter-spacing: 3px;
+  opacity: .85;
+}
+
+/* ================== LAYOUT ================== */
+.layout {
+  display: flex;
+  min-height: calc(100vh - 380px);
+}
+
+/* ================== SIDEBAR ================== */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #000, #1a1200);
+  padding: 30px;
+  border-right: 1px solid #3a2a00;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 14px 0;
+  text-align: center;
+  color: #cfa93d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #fff;
+  text-shadow: 0 0 12px gold;
+}
+
+  
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.brands button {
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.brands button:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 15px gold;
+}
+
+/* ================== CONTENT ================== */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* ================== SECTIONS ================== */
+.page {
+  display: none;
+  max-width: 900px;
+  margin: auto;
+  animation: fade .4s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px gold;
+}
+
+.page p {
+  line-height: 1.7;
+  text-align: center;
+  opacity: .9;
+}
+
+/* ================== PRODUCT BLOCK ================== */
+.product {
+  margin-top: 40px;
+  padding: 25px;
+  border: 1px solid #3a2a00;
+  background: linear-gradient(180deg, #000, #1a1200);
+}
+
+.product h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: linear-gradient(180deg, #000, #1a1200);
+  border: 1px solid #3a2a00;
+  padding: 20px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255,215,0,.4);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 15px;
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 10px;
+}
+
+/* ================== MOBILE ================== */
+@media(max-width:900px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #3a2a00;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BANNER -->
+<section class="top-banner">
+  <img src="assets/bannerNew.png                ">
+  <div class="banner-overlay">
+    <p>GOLD LINE • PRODUCT INFORMATIE • Evolve Biolabs</p>
+  </div>
+</section>
+
+<div class="layout">
+
+<!-- CONTENT -->
+<main class="content">
+
+  <section class="brands">
+  <a href="index.html"><button>Home</button></a>
+  </section>
+    
+  <section id="injectables" class="page active">
+    <h2>MASTA-E</h2>
+  
+     <h3>MASTA-E – Drostanolone Enanthate 200 mg/ml</h3>
+
+    <div class="product">
+      <p>Categorie: Hormonen</br>
+         Dosering: 200 mg </p>
+  
+      <h3>Wat is Masta-E 200?</h3>
+      <p>MASTA-E is een injecteerbare androgen-anabole formulering met 200 mg/ml Drostanolone Enanthate, bestemd voor intramusculaire toediening. Dit langwerkende middel wordt medisch erkend als ondersteunende therapie binnen bepaalde hormoongevoelige borstkankerbehandelingen, waarbij gecontroleerde onderdrukking van oestrogeenactiviteit noodzakelijk kan zijn onder strikt medisch toezicht.</p>
+      <h3>Toepassingen en voordelen</h3>
+      <p>• Ondersteunende therapie bij hormoongevoelige borstkanker
+    • Vermindering van oestrogeeninvloed in specifieke therapeutische gevallen
+    • Toediening onder oncologische en hormonale begeleiding</p>
+    <p>Verantwoord gebruik is essentieel. Raadpleeg een zorgverlener voor persoonlijk advies.</p>
+    <h3>Bijwerkingen en veiligheidsinformatie</h3>
+    <p>• Acne, vette huid of veranderingen in haargroei
+    • Stemmingswisselingen of prikkelbaarheid
+    • Vochtretentie of verhoogde bloeddruk
+    • Veranderingen in cholesterolwaarden</p>
+    <h3>Waarschuwingen</h3>
+    <p>• Uitsluitend op recept verkrijgbaar
+    • Niet aanbevolen tijdens zwangerschap of borstvoeding
+    • Regelmatige medische controles en hormonale monitoring vereist
+    • Buiten bereik van kinderen houden</p>
+    <h3>Bewaaradvies</h3>
+    <p>• Bewaren onder 25°C, koel en droog
+    • Beschermen tegen zonlicht en bevriezing
+    • Ampullen in originele blisterverpakking bewaren</p>
+<h3>Dosering en toediening</h3>
+<p>    • Alleen voor intramusculaire injectie
+    • Dosering en behandelduur uitsluitend vast te stellen door een arts
+    • Niet zelf injecteren of dosering aanpassen
+    • Steriele werkwijze en correcte afvalverwerking toepassen
+</p>
+</div>     
+    </section>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section id="oral" class="page">
+    <h2>Orale Steroïden</h2>
+    <p>Snelle werking, ideaal voor korte cycli.</p>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section id="peptides" class="page">
+    <h2>Peptides</h2>
+    <p>Ondersteuning van herstel, vetverbranding en groei.</p>
+  </section>
+
+</main>
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
