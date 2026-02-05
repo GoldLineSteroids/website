@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2b1b00, #000);
+  color: gold;
+}
+
+.mobile-header {
+  display: none;
+  background: black;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #3a2a00;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #000, #1a1200);
+  padding: 30px;
+  border-right: 1px solid #3a2a00;
+}
+
+.sidebar h2 {
+  text-shadow: 0 0 10px gold;
+}
+
+.sidebar a {
+  color: #cfa93d;
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+}
+
+.hero {
+  height: 220px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  z-index: 3;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/banner220.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+
+
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.brands button {
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.brands button:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 15px gold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: linear-gradient(180deg, #000, #1a1200);
+  border: 1px solid #3a2a00;
+  padding: 20px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255,215,0,.4);
+}
+
+.card button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255,215,0,.4);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 15px;
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: .6;
+}
+
+/* MOBILE */
+@media(max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .hero-overlay {
+    padding-left: 20px;
+  }
+  
+  .hero { height: 160px; 
+    background-size: contain; 
+    background-position: center; 
+  }
+}
+
+/* MERK DROPDOWN STRUCTUUR */
+.brand-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brand-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.brand-name {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background-color: #111;
+  color: gold;
+  border: 1px solid #3a2a00;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.brand-name:hover {
+  background-color: #2b1b00;
+}
+
+.hamburger {
+  font-size: 18px;
+  color: gold;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.brand-item:hover .hamburger {
+  transform: rotate(90deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #000;
+  border: 1px solid gold;
+  padding: 10px;
+  z-index: 10;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255,215,0,0.3);
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #cfa93d;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.dropdown-menu a:hover {
+  color: gold;
+  text-shadow: 0 0 5px gold;
+}
+
+.brand-item:hover .dropdown-menu {
+  display: block;
+}
+
